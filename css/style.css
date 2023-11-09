@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #000000;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 95vh;
+    box-shadow: inset 0 0 10px 10px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player {
+    width: 340px;
+    height: 70%;
+    /* border: 1px solid black; */
+    box-shadow: 0 0 20px 15px #000;
+    border-radius: 20px;
+    filter: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-img {
+    background-image: url(../assets/img/hozier.jpg);
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    border-radius: 5% 5% 0 0;
+}
+
+.container-player {
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(45deg, rgb(40, 40, 40), rgb(133, 133, 133));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 0 0 5% 5%;
+}
+
+.control {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 15px;
+}
+
+
+.btn {
+    cursor: pointer;
+    transition: all ease .5s;
+    background-color: transparent;
+    border: none;
+    filter: invert(1);
+}
+
+.btn:hover {
+    opacity: 0.5;
+}
+
+.btn .btn-play,
+.btn .btn-pause  {
+    width: 50px;
+    height: 50px;
+    fill: #000;
+}
+
+.pause {
+    display: none;
+}
+
+.btn-prev,
+.btn-next {
+    width: 30px;
+    height: 30px;
+    fill: #000;
+}
+
+.song {
+    margin: 0 10px;
+}
+
+.singer {
+    color: #c1ff06;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.title {
+    color: #fff;
+    font-size: 17px;
+}
+
+.btn-contr {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+
+.progress {
+    width: 70%;
+    height: 6%;
+    border-radius: 10px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.progress-bar {
+    background: #c1ff06;
+    transition: all ease .5s;
+    width: 100%;
+    height: 90%;
+    border-radius: 10px;
+}
+
+
+.footer {
+    background-color: #000000;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    width: 100vw;
+    height: 5vh;
+    padding: 5px 0 5px 0;
+}
+
+.footer-img {
+    width: 60px;
+    fill: #575757;
+    transition: all ease .5s;
+}
+
+.footer-img:hover {
+    fill: #c1ff06;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+.footer-link:visited {
+    color:#fff;
+}
+
+.footer-link:hover {
+    color: #c1ff06;
+}
+/* 
+.wrapper {
+    filter: blur(10%);
+} */
